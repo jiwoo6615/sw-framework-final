@@ -8,6 +8,7 @@ public class SwFrameworkFinalApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SwFrameworkFinalApplication.class, args);
+		System.out.println("SwFramework Final");
 	}
 
 }
