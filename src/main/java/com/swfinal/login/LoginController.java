@@ -63,4 +63,15 @@ public class LoginController {
 		Map<String, Object> result = loginService.requestLoginThymeleaf(params);
 		
 	}
+	Map<String, Object> userInfo = (Map<String, Object>) result.get("USER_INFO");
+	String userId = (String) userInfo.get("ID");
+	
+	System.out.println(userId);
+	
+	session.setAttribute("userId", userId);
+	model.addAttribute("result", result);
+	
+	return "login-thymeleaf";
+}
+
 }

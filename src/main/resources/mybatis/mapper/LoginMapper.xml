@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.swfinal.login.LoginMapper">
+
+	<select id="selectUserrInfo" resultType="java.util.HashMap" parameterType="java.util.HashMap">
+    <![CDATA[
+       SELECT user_seq, user_id, user_pw, user_nm, user_email, reg_dt, mod_dt FROM book.tb_users;]]>
+	</select>
+	
+</mapper>
